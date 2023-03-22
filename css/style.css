@@ -13,6 +13,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: #fff;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -40,8 +41,8 @@ header{
     height: 50px;
     width: 100%;
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
 }
 .navbar{
     display: flex;
@@ -60,7 +61,7 @@ header{
     color: #fff;
     font-weight: bold;
 }
-.cart-user span{
+.cart-user a{
     margin: 0 5px;
 }
 
@@ -72,6 +73,13 @@ main{
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
+}
+.col{
+    flex-basis: calc(100%/3);
+}
+.card{
+    position: relative;
+    color: #fff;
 }
 .col img{
     max-width: 100%;
@@ -85,12 +93,12 @@ main{
     right:0;
     color: #000;
 }
-.card{
-    position: relative;
-    color: #fff;
-}
+
 .item-descr{
     font-weight: bold;
+}
+.item-contents h5{
+    font-weight: normal;
 }
 .item-contents .price,.item-contents .old-price{
     font-size: 0.85em;
@@ -111,20 +119,15 @@ main{
             position: absolute;
             left: 0;
             bottom:50px;
+            font-size: 0.8em;
         }
-        .contents-sustainability{
-            height: 30px;
-            position: absolute;
-            left: 60px;
-            bottom:50px;
-        }
-        .discount:after{
+        .discount:before{
             background-color: #ff0000;
             content: "-30%";
             display: inline-block;
             padding: 3px 10px;
         }
-        .maxi-discount:after{
+        .maxi-discount:before{
             background-color: #ff0000;
             display: inline-block;
             content: "-50%";
@@ -138,8 +141,30 @@ main{
         }
         
 /* footer rules */
-
-
+footer{
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.foot-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.info-column ul{
+    display: flex;
+    gap:5px;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+.info-column div:first-child{
+    font-size: 0.9em;
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    gap: 15px;
+}
 
 /* DEBUG rules */
 
