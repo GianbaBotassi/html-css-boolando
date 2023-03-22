@@ -18,6 +18,8 @@ a{
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 /* hover rules  */
 .heart:hover{
     color: #ff0000;
@@ -34,6 +36,7 @@ body{
     display: inline-block;
 }
 
+
 /* Header rules */
 header{
     background-color: #ff6900;
@@ -43,6 +46,7 @@ header{
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 999;
 }
 .navbar{
     display: flex;
@@ -64,6 +68,7 @@ header{
 .cart-user a{
     margin: 0 5px;
 }
+
 
 /* main rules */
 main{
