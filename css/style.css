@@ -4,19 +4,118 @@
     padding: 0;
     box-sizing: 0;
 }
-
+li{
+    list-style: none;
+}
+.centered{
+    width: 70%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* hover rules  */
-
+.heart:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
 
 /* Header rules */
-
+header{
+    background-color: #ff6900;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navbar{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+.logo-column img{
+    height: 20px;
+}
+.navbar ul{
+    display: flex;
+    font-size: 0.8em;
+    gap: 5px;
+}
+.navbar ul li a{
+    color: #fff;
+}
 
 /* main rules */
+main{
+    margin-top:100px
+}
+.row{
+    display: flex;
+    gap: 5px;
+}
+.heart{
+    font-size: 1.8em;
+    position:absolute;
+    padding: 5px 10px;
+    background-color: #fff;
+    top:5px;
+    right:0;
+    color: #000;
+}
+.card{
+    position: relative;
+    color: #fff;
+}
 
-
-
+        /* Discount and sustain rules */
+        .contents-disc{
+            height: 30px;
+            position: absolute;
+            left: 0;
+            bottom:50px;
+        }
+        .contents-sustainability{
+            height: 30px;
+            position: absolute;
+            left: 60px;
+            bottom:50px;
+        }
+        .discount:after{
+            background-color: #ff0000;
+            content: "-30%";
+            display: inline-block;
+            padding: 3px 10px;
+        }
+        .maxi-discount:after{
+            background-color: #ff0000;
+            display: inline-block;
+            content: "-50%";
+            padding: 3px 10px;
+        }
+        .sustain:after{
+            background-color: #008000;
+            content: "Sostenibilità";
+            display: inline-block;
+            padding: 3px 10px;
+        }
+        
 /* footer rules */
 
 
 
 /* DEBUG rules */
+.row{
+    border: blue 1px solid;
+}
+.col{
+    border: red 5px dotted;
+}
+img{
+    max-width: 100%;
+}
+
